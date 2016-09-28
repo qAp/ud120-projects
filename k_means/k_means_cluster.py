@@ -81,3 +81,19 @@ try:
          f1_name=feature_1, f2_name=feature_2)
 except NameError:
     print("no predictions object named pred found, no clusters to plot")
+
+
+
+# Stock option range
+values = [info['exercised_stock_options']
+          for name, info in data_dict.items()
+          if info['exercised_stock_options'] != 'NaN']
+value_min = min(values)
+value_max = max(values)
+print('Exercised stock options')
+print('minimum value =', value_min)
+print('maximum value =', value_max)
+
+
+
+
