@@ -95,5 +95,17 @@ print('minimum value =', value_min)
 print('maximum value =', value_max)
 
 
+# Salary range
+values = [info['salary']
+          for name, info in data_dict.items()
+          if info['salary'] != 'NaN']
+value_min = min(values)
+value_max = max(values)
+print('Salary')
+print('minimum value =', value_min)
+print('maximum value =', value_max)
+
+
+
 
 
